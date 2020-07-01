@@ -1,1 +1,1 @@
-# tea_house_respnsive_template
+# A responsive Coffee Shop website using HTML,CSS & Javascript.
