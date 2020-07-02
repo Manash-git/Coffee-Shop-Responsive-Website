@@ -103,7 +103,24 @@ a {
 /* content-divider */
 .content-divider {
     background: linear-gradient(to left, var(--mateGreen), var(--mateOrange), var(--mateGreen));
-    height: .8rem;
+    height: .6rem;
 }
 
+/* skills */
+.skills{
+
+}
+.skill{
+
+}
+.skill-icon{
+
+}
+.skill-title{
+
+}
+.skill-text{
+
+}
+/* skill end */
 /* All Animation */
