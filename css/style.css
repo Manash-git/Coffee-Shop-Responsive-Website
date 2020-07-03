@@ -15,8 +15,8 @@
     /* --mateGrey: #e5e5e5; */
     --mateGrey: #cad2c5;
     --mateWhite: #FFFFFA;
-    --dafultTransitition: all .3s ease-in-out;
-    --letterSpacing: 0.5rem;
+    --defaultTransitition: all .38s ease-in-out;
+    --letterSpacing: 0.45rem;
     --blackGradient: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 
 }
@@ -53,7 +53,7 @@ a {
 
 /* Header */
 .header {
-    background: var(--blackGradient), url("/images/main-bcg.jpeg") center/cover no-repeat fixed;
+    background: var(--blackGradient), url("../images/main-bcg.jpeg") center/cover no-repeat fixed;
     min-height: 100vh;
     position: relative;
 }
@@ -72,7 +72,7 @@ a {
 .banner-subtitle {
     font-size: 1.9rem;
     color: var(--mateGreen);
-    font-family:var(--curlFont);
+    font-family: var(--curlFont);
 }
 
 .banner-title {
@@ -107,20 +107,67 @@ a {
 }
 
 /* skills */
-.skills{
-
+.skills {
+    background-color: var(--mateGrey);
 }
-.skill{
 
+.skill {
+    padding: 2.5rem 1rem;
+    text-align: center;
+    transition: var(--defaultTransitition);
 }
-.skill-icon{
 
+.skill-icon {
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+    display: inline-block;
+    transition: var(--defaultTransitition);
 }
-.skill-title{
 
+.skill-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: var(--letterSpacing);
+    color: var(--mateGreen);
+    margin-bottom: 1rem;
+    transition: var(--defaultTransitition);
 }
-.skill-text{
 
+.skill-text {
+    max-width: 15rem;
+    margin: 0 auto;
 }
+
+/* skill all hover */
+.skill:hover {
+    background-color: var(--mateGreen);
+}
+
+.skill:hover .skill-title {
+    color: var(--mateWhite);
+}
+
+.skill:hover .skill-icon {
+    transform: translateY(-5.1px);
+}
+
+
+/* End skill all hover */
+
+/* skill media query for responsiveness */
+@media screen and (min-width: 560px) {
+    .skill {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .skill {
+        width: 25%;
+    }
+}
+
 /* skill end */
 /* All Animation */
