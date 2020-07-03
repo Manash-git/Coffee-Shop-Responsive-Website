@@ -43,6 +43,30 @@ a {
     color: var(--mateWhite);
 }
 
+/* Global */
+.section-center {
+    width: 80vw;
+    padding: 4rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-subtitle {
+    font-size: 2rem;
+    font-family: var(--curlFont);
+    color: var(--mateGreen);
+    letter-spacing: var(--letterSpacing);
+    text-transform: capitalize;
+
+
+}
+
+.section-title {
+font-size: 2rem;
+text-transform: uppercase;
+}
+
+/* End Global */
 /* Clear Fix */
 .clearfix::after,
 .clearfix::before {
@@ -83,7 +107,7 @@ a {
     margin-top: 2rem;
     line-height: 1.3;
 }
-
+.common-btn,
 .banner-btn {
     background-color: var(--mateGreen);
     font-weight: bold;
@@ -170,4 +194,36 @@ a {
 }
 
 /* skill end */
+/* about */
+
+.about-img-border {
+    background-color: var(--mateGreen);
+    overflow: hidden;
+    border: .5rem solid var(--mateGreen);
+    border-radius: 1.5rem;
+}
+
+.about-img {
+    width: 100%;
+    display: block;
+}
+
+.about-info {
+    padding: 2rem 0;
+}
+
+.about-text {
+    margin: 1.2rem 0;
+    max-width: 25rem;
+}
+
+@media screen and (min-width:1000px){
+    .about-img-container,
+    .about-info{
+        float: left;
+        width: 50%;
+        padding: 3rem;
+    }
+}
+/* end about */
 /* All Animation */
