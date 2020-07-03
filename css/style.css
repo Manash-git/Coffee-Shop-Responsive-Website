@@ -128,6 +128,7 @@ a {
 
 
 }
+
 .common-btn:hover,
 .banner-btn:hover {
     color: var(--mateGrey);
@@ -146,7 +147,7 @@ a {
         opacity: 0.1;
     }
 
-    
+
     100% {
         transform: scale(1);
         opacity: 1;
@@ -302,43 +303,48 @@ a {
 /* end about */
 
 /* product */
-.products{
+.products {
     background-color: var(--mateDark);
 
 }
+
 .product-info-container,
 .products-collection {
     padding: 1rem 0;
 }
-.product-info-text{
+
+.product-info-text {
     color: var(--mateGrey);
     margin: 1.2rem 0;
 }
-.product-img{
+
+.product-img {
     display: block;
     width: 100%;
     border-radius: .7rem;
     margin-bottom: 2rem;
 }
-.product-title{
-font-family: var(--curlFont);
-color: var(--mateGreen);
-font-size: 1.8rem;
-letter-spacing: var(--letterSpacing);
-}
-.product-price{
-color: var(--mateGrey);
-font-size: 1.6rem;
-margin-bottom: 2rem;
+
+.product-title {
+    font-family: var(--curlFont);
+    color: var(--mateGreen);
+    font-size: 1.8rem;
+    letter-spacing: var(--letterSpacing);
 }
 
-@media screen and (min-width:768px){
-    .product{
+.product-price {
+    color: var(--mateGrey);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width:768px) {
+    .product {
         float: left;
         width: 50%;
         padding: 1rem 2rem;
     }
-    
+
     .products-collection {
         padding: 0rem 0;
         margin-left: -30px;
@@ -346,28 +352,137 @@ margin-bottom: 2rem;
 }
 
 
-@media screen and (min-width:992px){
-    .product{
+@media screen and (min-width:992px) {
+    .product {
         width: 33.3%;
         padding: 1rem 1rem;
-        
+
     }
+
     .products-collection {
         padding: 1rem 0;
         margin-left: -20px;
     }
-    
+
 }
-@media screen and (min-width:1200px){
-    .product-info-container{
+
+@media screen and (min-width:1200px) {
+    .product-info-container {
         float: left;
         width: 30%;
         padding-right: 30px;
     }
-    .products-collection{
+
+    .products-collection {
         float: left;
         width: 70%;
     }
 }
 
+
 /* end product */
+/* service  */
+.services {
+    background-color: var(--mateGrey);
+    padding: 3rem 0rem;
+}
+
+.service-header {
+    text-align: center;
+}
+
+.service-header-title {
+    letter-spacing: var(--letterSpacing);
+}
+
+.service-card {
+    border: 1rem solid var(--mateGreen);
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+    padding: .25rem;
+    -webkit-box-shadow: 10px 7px 6px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 7px 6px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 7px 6px 0px rgba(0, 0, 0, 0.75);
+    transition: var(--defaultTransitition);
+}
+
+.service-card:hover {
+    -webkit-box-shadow: 11px 12px 8px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 12px 8px 2px rgba(0,0,0,0.75);
+    box-shadow: 11px 12px 8px 2px rgba(0,0,0,0.75);
+}
+
+.service-card-img-container {
+    position: relative;
+}
+
+.service-card-img {
+    display: block;
+    width: 100%;
+    /* overflow: hidden; */
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+}
+
+.service-card-icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 2rem;
+    background-color: var(--mateOrange);
+    border-radius: 50%;
+    padding: .5rem 1rem;
+    /* margin-bottom: 2rem; */
+    transform: translate(-50%, 50%);
+    color: var(--mateDark);
+    -webkit-box-shadow: 9px 9px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 9px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 9px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.service-card-info {
+    
+    background-color: var(--mateGreen);
+    color: var(--mateWhite);
+    letter-spacing: var(--letterSpacing);
+    text-align: center;
+    padding: 3rem 1rem;
+    font-size: 1.4rem;
+    border-bottom-left-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+}
+
+.service-card-btn {
+    padding: .9rem 1.5rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--mateDark);
+    border-radius: .65rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: var(--defaultTransitition);
+}
+
+.service-card-btn:hover {
+    background-color: var(--mateDark);
+    color: var(--mateGrey);
+    /* font-size: 1.2rem; */
+}
+
+@media screen and (min-width:768px){
+    .service-card{
+        float: left;
+        width: 45%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (min-width:992px){
+    .service-card{
+        float: left;
+        width: 30%;
+        margin-right: 3.333%;
+    }
+}
+/* end service  */
