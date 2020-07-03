@@ -57,6 +57,7 @@ a {
     color: var(--mateGreen);
     letter-spacing: var(--letterSpacing);
     text-transform: capitalize;
+    margin-bottom: .8rem;
 
 
 }
@@ -118,6 +119,7 @@ a {
     padding: .9rem 1rem;
     display: inline-block;
     margin-top: 1.2rem;
+    margin-bottom: 1rem;
     cursor: pointer;
     text-transform: uppercase;
     outline: .4rem solid var(--mateGreen);
@@ -298,4 +300,74 @@ a {
 }
 
 /* end about */
-/* All Animation */
+
+/* product */
+.products{
+    background-color: var(--mateDark);
+
+}
+.product-info-container,
+.products-collection {
+    padding: 1rem 0;
+}
+.product-info-text{
+    color: var(--mateGrey);
+    margin: 1.2rem 0;
+}
+.product-img{
+    display: block;
+    width: 100%;
+    border-radius: .7rem;
+    margin-bottom: 2rem;
+}
+.product-title{
+font-family: var(--curlFont);
+color: var(--mateGreen);
+font-size: 1.8rem;
+letter-spacing: var(--letterSpacing);
+}
+.product-price{
+color: var(--mateGrey);
+font-size: 1.6rem;
+margin-bottom: 2rem;
+}
+
+@media screen and (min-width:768px){
+    .product{
+        float: left;
+        width: 50%;
+        padding: 1rem 2rem;
+    }
+    
+    .products-collection {
+        padding: 0rem 0;
+        margin-left: -30px;
+    }
+}
+
+
+@media screen and (min-width:992px){
+    .product{
+        width: 33.3%;
+        padding: 1rem 1rem;
+        
+    }
+    .products-collection {
+        padding: 1rem 0;
+        margin-left: -20px;
+    }
+    
+}
+@media screen and (min-width:1200px){
+    .product-info-container{
+        float: left;
+        width: 30%;
+        padding-right: 30px;
+    }
+    .products-collection{
+        float: left;
+        width: 70%;
+    }
+}
+
+/* end product */
